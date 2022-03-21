@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20211030</FitNesseVersion>
+  <rootPath>FrontPage.SimpleDepositSuite.DepositForFurtherCreditOf</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2022-03-05T14:00:28-05:00</date>
+    <runTimeInMillis>1</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/src/test/java/com/&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;When a deposit is made, the depositor may choose to identify an account for the final money to land in. In this case we expect to see transactions that represent a deposit into the initial account, followed by an immediate debit from that account and a credit to the final account.&lt;br/&gt;&lt;br/&gt;&lt;img src="files/ffcmockup.png" width="200"/&gt; &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="11" class="error"&gt;com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture&lt;hr/&gt; &lt;span class="fit_label"&gt;Could not find fixture: com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;b&gt;User account &lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;User account balance&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;FFC Account&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Deposit Amt&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Deposit Date&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Current Date&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Cleared?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;User account balance?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;User Account New Line Items?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;FFC Account?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;FFC Account New Line Items?&lt;/b&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1358&lt;/td&gt;
+		&lt;td&gt;3419.32&lt;/td&gt;
+		&lt;td&gt;94010&lt;/td&gt;
+		&lt;td&gt;1349.20&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;Yes&lt;/td&gt;
+		&lt;td&gt;3419.32&lt;/td&gt;
+		&lt;td&gt;CR 1349.20; DR 1349.20&lt;/td&gt;
+		&lt;td&gt;94010&lt;/td&gt;
+		&lt;td&gt;CR 1349.20&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1920&lt;/td&gt;
+		&lt;td&gt;5931.39&lt;/td&gt;
+		&lt;td&gt;58381&lt;/td&gt;
+		&lt;td&gt;49310.10&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;No&lt;/td&gt;
+		&lt;td&gt;5931.39&lt;/td&gt;
+		&lt;td&gt;CCR: 49310.10; CDR: 49310.10; FFC 58381&lt;/td&gt;
+		&lt;td&gt;58381&lt;/td&gt;
+		&lt;td&gt;NONE&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;39992&lt;/td&gt;
+		&lt;td&gt;220113.94&lt;/td&gt;
+		&lt;td&gt;5930&lt;/td&gt;
+		&lt;td&gt;100.00&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;2/12/2022&lt;/td&gt;
+		&lt;td&gt;Yes&lt;/td&gt;
+		&lt;td&gt;220213.94&lt;/td&gt;
+		&lt;td&gt;CR: 100.00; CDR: 100.00; FFC 5930 / 3-1-2022&lt;/td&gt;
+		&lt;td&gt;5930&lt;/td&gt;
+		&lt;td&gt;NONE&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1358&lt;/td&gt;
+		&lt;td&gt;-1049.44&lt;/td&gt;
+		&lt;td&gt;94010&lt;/td&gt;
+		&lt;td&gt;1349.20&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;Yes&lt;/td&gt;
+		&lt;td&gt;299.76&lt;/td&gt;
+		&lt;td&gt;CR 1349.20; DR 1349.20 / CANCELLED - IFF&lt;/td&gt;
+		&lt;td&gt;NONE&lt;/td&gt;
+		&lt;td&gt;NONE&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DepositForFurtherCreditOf</relativePageName>
+  </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java -cp /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/src/test/java/com/:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar fit.FitServer MacBook-Pro-2.local 55000 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>271</totalRunTimeInMillis>
+</testResults>
+

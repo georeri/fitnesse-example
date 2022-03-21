@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20211030</FitNesseVersion>
+  <rootPath>FrontPage.CoreGame</rootPath>
+  <pageHistoryReference>
+    <name>FrontPage.CoreGame.GameWithOnePlayerAndAutomatedRules</name>
+    <date>2022-02-20T16:11:05-05:00</date>
+    <pageHistoryLink>FrontPage.CoreGame.GameWithOnePlayerAndAutomatedRules?pageHistory&amp;resultDate=20220220161105</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>40</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java -cp /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar fit.FitServer Richards-iPhone 49517 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>346</totalRunTimeInMillis>
+</suiteResults>
+

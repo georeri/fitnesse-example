@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20211030</FitNesseVersion>
+  <rootPath>FrontPage.SimpleDepositSuite.DepositForFurtherCreditOf</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>45</exceptions>
+    </counts>
+    <date>2022-03-05T15:49:54-05:00</date>
+    <runTimeInMillis>47</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;When a deposit is made, the depositor may choose to identify an account for the final money to land in. In this case we expect to see transactions that represent a deposit into the initial account, followed by an immediate debit from that account and a credit to the final account.&lt;br/&gt;&lt;br/&gt;&lt;img src="files/ffcmockup.png" width="200"/&gt; &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="11"&gt;For Further Credit Fixture &lt;span class="error"&gt;Could not invoke constructor for ForFurtherCreditFixture[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;&lt;b&gt;User account &lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;User account balance&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;FFC Account&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Deposit Amt&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Deposit Date&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Current Date&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;Cleared?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;User account balance?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;User Account New Line Items?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;FFC Account?&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;b&gt;FFC Account New Line Items?&lt;/b&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;1358 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3419.32 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;94010 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;1349.20 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositAmtB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;03/12/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;03/12/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBCurrentDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Yes &lt;span class="error"&gt;The instance decisionTable_0.setBClearedB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3419.32 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR 1349.20; DR 1349.20 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;94010 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR 1349.20 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;1920 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5931.39 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;58381 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;49310.10 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositAmtB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3/1/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3/1/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBCurrentDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;No &lt;span class="error"&gt;The instance decisionTable_0.setBClearedB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5931.39 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CCR: 49310.10; CDR: 49310.10; FFC 58381 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;58381 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;39992 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;220113.94 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5930 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;100.00 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositAmtB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3/1/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;2/12/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBCurrentDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Yes &lt;span class="error"&gt;The instance decisionTable_0.setBClearedB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;220213.94 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR: 100.00; CDR: 100.00; FFC 5930 / 3-1-2022 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5930 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;1358 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;-1049.44 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;94010 &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;1349.20 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositAmtB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;03/12/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBDepositDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;03/12/2022 &lt;span class="error"&gt;The instance decisionTable_0.setBCurrentDateB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Yes &lt;span class="error"&gt;The instance decisionTable_0.setBClearedB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;299.76 &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountBalanceB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR 1349.20; DR 1349.20 / CANCELLED - IFF &lt;span class="error"&gt;The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DepositForFurtherCreditOf</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='ForFurtherCreditFixture', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_0</instructionId>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>Could not invoke constructor for ForFurtherCreditFixture[0]</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountB', args=[1358]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_4</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[3419.32]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_5</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_6', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[94010]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_6</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_7', instruction='call', instanceName='decisionTable_0', methodName='setBDepositAmtB', args=[1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_7</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositAmtB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_8', instruction='call', instanceName='decisionTable_0', methodName='setBDepositDateB', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_8</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_9', instruction='call', instanceName='decisionTable_0', methodName='setBCurrentDateB', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_9</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBCurrentDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_10', instruction='call', instanceName='decisionTable_0', methodName='setBClearedB', args=[Yes]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_10</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBClearedB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_11', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[3419.32]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_11</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_12', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountNewLineItemsB', args=[CR 1349.20; DR 1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_12</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_13', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[94010]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_13</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_14', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountNewLineItemsB', args=[CR 1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_14</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_17', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountB', args=[1920]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_17</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_18', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[5931.39]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_18</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_19', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[58381]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_19</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_20', instruction='call', instanceName='decisionTable_0', methodName='setBDepositAmtB', args=[49310.10]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_20</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositAmtB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_21', instruction='call', instanceName='decisionTable_0', methodName='setBDepositDateB', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_21</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_22', instruction='call', instanceName='decisionTable_0', methodName='setBCurrentDateB', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_22</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBCurrentDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_23', instruction='call', instanceName='decisionTable_0', methodName='setBClearedB', args=[No]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_23</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBClearedB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_24', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[5931.39]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_24</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_25', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountNewLineItemsB', args=[CCR: 49310.10; CDR: 49310.10; FFC 58381]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_25</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_26', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[58381]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_26</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_27', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountNewLineItemsB', args=[NONE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_27</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_30', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountB', args=[39992]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_30</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_31', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[220113.94]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_31</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_32', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[5930]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_32</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_33', instruction='call', instanceName='decisionTable_0', methodName='setBDepositAmtB', args=[100.00]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_33</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositAmtB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_34', instruction='call', instanceName='decisionTable_0', methodName='setBDepositDateB', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_34</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_35', instruction='call', instanceName='decisionTable_0', methodName='setBCurrentDateB', args=[2/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_35</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBCurrentDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_36', instruction='call', instanceName='decisionTable_0', methodName='setBClearedB', args=[Yes]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_36</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBClearedB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_37', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[220213.94]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_37</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_38', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountNewLineItemsB', args=[CR: 100.00; CDR: 100.00; FFC 5930 / 3-1-2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_38</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_39', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[5930]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_39</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_40', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountNewLineItemsB', args=[NONE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_40</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_43', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountB', args=[1358]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_43</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_44', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[-1049.44]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_44</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_45', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[94010]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_45</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_46', instruction='call', instanceName='decisionTable_0', methodName='setBDepositAmtB', args=[1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_46</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositAmtB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_47', instruction='call', instanceName='decisionTable_0', methodName='setBDepositDateB', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_47</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBDepositDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_48', instruction='call', instanceName='decisionTable_0', methodName='setBCurrentDateB', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_48</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBCurrentDateB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_49', instruction='call', instanceName='decisionTable_0', methodName='setBClearedB', args=[Yes]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_49</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBClearedB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_50', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountBalanceB', args=[299.76]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_50</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountBalanceB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_51', instruction='call', instanceName='decisionTable_0', methodName='setBUserAccountNewLineItemsB', args=[CR 1349.20; DR 1349.20 / CANCELLED - IFF]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_51</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBUserAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_52', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountB', args=[NONE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_52</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_53', instruction='call', instanceName='decisionTable_0', methodName='setBFFCAccountNewLineItemsB', args=[NONE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_53</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setBFFCAccountNewLineItemsB. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java -cp /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by fitnesse.slim.instructions.SystemExitSecurityManager (file:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar)
+WARNING: Please consider reporting this to the maintainers of fitnesse.slim.instructions.SystemExitSecurityManager
+WARNING: System::setSecurityManager will be removed in a future release
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>216</totalRunTimeInMillis>
+</testResults>
+

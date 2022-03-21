@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20211030</FitNesseVersion>
+  <rootPath>FrontPage.SimpleDepositSuite.DepositForFurtherCreditOf</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>20</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2022-03-05T19:56:34-05:00</date>
+    <runTimeInMillis>63</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/target/test-classes&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/target/classes&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: COLLAPSE_SETUP=true&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: COLLAPSE_TEARDOWN=true&lt;/span&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.perrytech.deposits.fitnesseFixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;When a deposit is made, the depositor may choose to identify an account for the final money to land in. In this case we expect to see transactions that represent a deposit into the initial account, followed by an immediate debit from that account and a credit to the final account.&lt;br/&gt;&lt;br/&gt;&lt;img src="files/ffcmockup.png" width="200"/&gt; &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="11"&gt;&lt;span class="pass"&gt;For Further Credit Fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;User account&lt;/td&gt;
+		&lt;td&gt;User account balance&lt;/td&gt;
+		&lt;td&gt;FFC Account&lt;/td&gt;
+		&lt;td&gt;Deposit Amt&lt;/td&gt;
+		&lt;td&gt;Deposit Date&lt;/td&gt;
+		&lt;td&gt;Current Date&lt;/td&gt;
+		&lt;td&gt;Cleared?&lt;/td&gt;
+		&lt;td&gt;User account balance?&lt;/td&gt;
+		&lt;td&gt;User Account New Line Items?&lt;/td&gt;
+		&lt;td&gt;FFC Account?&lt;/td&gt;
+		&lt;td&gt;FFC Account New Line Items?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;1358&lt;/td&gt;
+		&lt;td&gt;3419.32&lt;/td&gt;
+		&lt;td&gt;94010&lt;/td&gt;
+		&lt;td&gt;1349.20&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;Yes&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;0&lt;/span&gt;.&lt;span class="diff"&gt;0&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;3419&lt;/span&gt;.&lt;span class="diff"&gt;32&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;CR 1349.20; DR 1349.20;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;94010&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;CR 1349.20;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;1920&lt;/td&gt;
+		&lt;td&gt;5931.39&lt;/td&gt;
+		&lt;td&gt;58381&lt;/td&gt;
+		&lt;td&gt;49310.10&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;No&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;0&lt;/span&gt;.&lt;span class="diff"&gt;0&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;5931&lt;/span&gt;.&lt;span class="diff"&gt;39&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;CCR: 49310.10; CDR: 49310.10; FFC 58381;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;58381&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;NONE;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;39992&lt;/td&gt;
+		&lt;td&gt;220113.94&lt;/td&gt;
+		&lt;td&gt;5930&lt;/td&gt;
+		&lt;td&gt;100.00&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;2/12/2022&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;Yes&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[0.&lt;span class="diff"&gt;0&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;22&lt;/span&gt;0&lt;span class="diff"&gt;113&lt;/span&gt;.&lt;span class="diff"&gt;94&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;CR: 100.00; CDR: 100.00; FFC 5930 / 3-1-2022;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;5930&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;NONE;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;1358&lt;/td&gt;
+		&lt;td&gt;-1049.44&lt;/td&gt;
+		&lt;td&gt;94010&lt;/td&gt;
+		&lt;td&gt;1349.20&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;Yes&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;0&lt;/span&gt;.&lt;span class="diff"&gt;0&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;299&lt;/span&gt;.&lt;span class="diff"&gt;76&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;CR 1349.20; DR 1349.20 / CANCELLED - IFF;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;NONE&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;NONE;&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DepositForFurtherCreditOf</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.perrytech.deposits.fitnesseFixtures'}</instruction>
+        <slimResult>pass(com.perrytech.deposits.fitnesseFixtures)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>import_0_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ImportExpectation</type>
+          <evaluationMessage>com.perrytech.deposits.fitnesseFixtures</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='ForFurtherCreditFixture', args=[]}</instruction>
+        <slimResult>pass(For Further Credit Fixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>For Further Credit Fixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[1358]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_4</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[3419.32]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[94010]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_7</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_8</instructionId>
+          <col>4</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_9</instructionId>
+          <col>5</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>fail(a=;e=Yes)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_11</instructionId>
+          <col>6</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>Yes</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult>fail(a=0.0;e=3419.32)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_12</instructionId>
+          <col>7</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <actual>0.0</actual>
+          <expected>3419.32</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=CR 1349.20; DR 1349.20;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_13</instructionId>
+          <col>8</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>CR 1349.20; DR 1349.20;</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult>fail(a=;e=94010)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_14</instructionId>
+          <col>9</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>94010</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_15', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=CR 1349.20;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_15</instructionId>
+          <col>10</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>CR 1349.20;</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[1920]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_17</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[5931.39]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_18</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_19', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[58381]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_19</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[49310.10]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_20</instructionId>
+          <col>3</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_21', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_21</instructionId>
+          <col>4</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_22</instructionId>
+          <col>5</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>fail(a=;e=No)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_24</instructionId>
+          <col>6</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>No</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult>fail(a=0.0;e=5931.39)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_25</instructionId>
+          <col>7</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+          <actual>0.0</actual>
+          <expected>5931.39</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=CCR: 49310.10; CDR: 49310.10; FFC 58381;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_26</instructionId>
+          <col>8</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>CCR: 49310.10; CDR: 49310.10; FFC 58381;</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult>fail(a=;e=58381)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_27</instructionId>
+          <col>9</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>58381</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=NONE;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_28</instructionId>
+          <col>10</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>NONE;</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[39992]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_30</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_31', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[220113.94]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_31</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[5930]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_32</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_33', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[100.00]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_33</instructionId>
+          <col>3</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_34</instructionId>
+          <col>4</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[2/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_35</instructionId>
+          <col>5</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_37', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>fail(a=;e=Yes)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_37</instructionId>
+          <col>6</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>Yes</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult>fail(a=0.0;e=220113.94)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_38</instructionId>
+          <col>7</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+          <actual>0.0</actual>
+          <expected>220113.94</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_39', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=CR: 100.00; CDR: 100.00; FFC 5930 / 3-1-2022;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_39</instructionId>
+          <col>8</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>CR: 100.00; CDR: 100.00; FFC 5930 / 3-1-2022;</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult>fail(a=;e=5930)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_40</instructionId>
+          <col>9</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>5930</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=NONE;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_41</instructionId>
+          <col>10</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>NONE;</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_43', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[1358]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_43</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[-1049.44]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_44</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_45', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[94010]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_45</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_46', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_46</instructionId>
+          <col>3</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_47', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_47</instructionId>
+          <col>4</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_48', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_48</instructionId>
+          <col>5</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_50', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>fail(a=;e=Yes)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_50</instructionId>
+          <col>6</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>Yes</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_51', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult>fail(a=0.0;e=299.76)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_51</instructionId>
+          <col>7</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+          <actual>0.0</actual>
+          <expected>299.76</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_52', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=CR 1349.20; DR 1349.20 / CANCELLED - IFF;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_52</instructionId>
+          <col>8</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>CR 1349.20; DR 1349.20 / CANCELLED - IFF;</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_53', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult>fail(a=;e=NONE)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_53</instructionId>
+          <col>9</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>NONE</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_54', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult>fail(a=;e=NONE;)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_54</instructionId>
+          <col>10</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+          <actual></actual>
+          <expected>NONE;</expected>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java -cp /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/target/test-classes:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/target/classes:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by fitnesse.slim.instructions.SystemExitSecurityManager (file:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar)
+WARNING: Please consider reporting this to the maintainers of fitnesse.slim.instructions.SystemExitSecurityManager
+WARNING: System::setSecurityManager will be removed in a future release
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>227</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,1136 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20211030</FitNesseVersion>
+  <rootPath>FrontPage.SimpleDepositSuite.DepositForFurtherCreditOf</rootPath>
+  <result>
+    <counts>
+      <right>3</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>16</exceptions>
+    </counts>
+    <date>2022-03-05T18:19:00-05:00</date>
+    <runTimeInMillis>70</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/target/test-classes&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: COLLAPSE_SETUP=true&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: COLLAPSE_TEARDOWN=true&lt;/span&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.perrytech.deposits.fitnesseFixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;When a deposit is made, the depositor may choose to identify an account for the final money to land in. In this case we expect to see transactions that represent a deposit into the initial account, followed by an immediate debit from that account and a credit to the final account.&lt;br/&gt;&lt;br/&gt;&lt;img src="files/ffcmockup.png" width="200"/&gt; &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="11"&gt;&lt;span class="pass"&gt;For Further Credit Fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;User account&lt;/td&gt;
+		&lt;td&gt;User account balance&lt;/td&gt;
+		&lt;td&gt;FFC Account&lt;/td&gt;
+		&lt;td&gt;Deposit Amt&lt;/td&gt;
+		&lt;td&gt;Deposit Date&lt;/td&gt;
+		&lt;td&gt;Current Date&lt;/td&gt;
+		&lt;td&gt;Cleared?&lt;/td&gt;
+		&lt;td&gt;User account balance?&lt;/td&gt;
+		&lt;td&gt;User Account New Line Items?&lt;/td&gt;
+		&lt;td&gt;FFC Account?&lt;/td&gt;
+		&lt;td&gt;FFC Account New Line Items?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;1358&lt;/td&gt;
+		&lt;td&gt;3419.32&lt;/td&gt;
+		&lt;td&gt;94010&lt;/td&gt;
+		&lt;td&gt;1349.20&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Yes&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3419.32 &lt;span class="error"&gt;No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR 1349.20; DR 1349.20 &lt;span class="error"&gt;No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;94010 &lt;span class="error"&gt;No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR 1349.20 &lt;span class="error"&gt;No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;1920&lt;/td&gt;
+		&lt;td&gt;5931.39&lt;/td&gt;
+		&lt;td&gt;58381&lt;/td&gt;
+		&lt;td&gt;49310.10&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;Yes&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;span class="diff"&gt;No&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5931.39 &lt;span class="error"&gt;No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CCR: 49310.10; CDR: 49310.10; FFC 58381 &lt;span class="error"&gt;No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;58381 &lt;span class="error"&gt;No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;39992&lt;/td&gt;
+		&lt;td&gt;220113.94&lt;/td&gt;
+		&lt;td&gt;5930&lt;/td&gt;
+		&lt;td&gt;100.00&lt;/td&gt;
+		&lt;td&gt;3/1/2022&lt;/td&gt;
+		&lt;td&gt;2/12/2022&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Yes&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;220213.94 &lt;span class="error"&gt;No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR: 100.00; CDR: 100.00; FFC 5930 / 3-1-2022 &lt;span class="error"&gt;No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5930 &lt;span class="error"&gt;No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;1358&lt;/td&gt;
+		&lt;td&gt;-1049.44&lt;/td&gt;
+		&lt;td&gt;94010&lt;/td&gt;
+		&lt;td&gt;1349.20&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;03/12/2022&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Yes&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;299.76 &lt;span class="error"&gt;No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;CR 1349.20; DR 1349.20 / CANCELLED - IFF &lt;span class="error"&gt;No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;NONE &lt;span class="error"&gt;No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&amp;gt; class java.lang.String
+equals(java.lang.Object) -&amp;gt; boolean
+getClass() -&amp;gt; class java.lang.Class
+hashCode() -&amp;gt; int
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+setCurrentDate(java.lang.String) -&amp;gt; void
+setDepositAmt(double) -&amp;gt; void
+setDepositDate(java.lang.String) -&amp;gt; void
+setFFCAccount(java.lang.String) -&amp;gt; void
+setUserAccount(java.lang.String) -&amp;gt; void
+setUserAccountBalance(double) -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DepositForFurtherCreditOf</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.perrytech.deposits.fitnesseFixtures'}</instruction>
+        <slimResult>pass(com.perrytech.deposits.fitnesseFixtures)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>import_0_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ImportExpectation</type>
+          <evaluationMessage>com.perrytech.deposits.fitnesseFixtures</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='ForFurtherCreditFixture', args=[]}</instruction>
+        <slimResult>pass(For Further Credit Fixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>For Further Credit Fixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[1358]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_4</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[3419.32]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[94010]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_7</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_8</instructionId>
+          <col>4</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_9</instructionId>
+          <col>5</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>pass(Yes)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>decisionTable_1_11</instructionId>
+          <col>6</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>Yes</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_12</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_13</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_14</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_15', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_15</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[1920]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_17</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[5931.39]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_18</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_19', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[58381]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_19</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[49310.10]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_20</instructionId>
+          <col>3</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_21', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_21</instructionId>
+          <col>4</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_22</instructionId>
+          <col>5</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>fail(a=Yes;e=No)</slimResult>
+        <expectation>
+          <status>fail</status>
+          <instructionId>decisionTable_1_24</instructionId>
+          <col>6</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+          <actual>Yes</actual>
+          <expected>No</expected>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_25</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_26</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_27</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_28</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[39992]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_30</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_31', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[220113.94]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_31</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[5930]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_32</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_33', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[100.00]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_33</instructionId>
+          <col>3</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[3/1/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_34</instructionId>
+          <col>4</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[2/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_35</instructionId>
+          <col>5</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_37', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>pass(Yes)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>decisionTable_1_37</instructionId>
+          <col>6</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>Yes</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_38</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_39', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_39</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_40</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_41</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_43', instruction='call', instanceName='decisionTable_1', methodName='setUserAccount', args=[1358]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_43</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='setUserAccountBalance', args=[-1049.44]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_44</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_45', instruction='call', instanceName='decisionTable_1', methodName='setFFCAccount', args=[94010]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_45</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_46', instruction='call', instanceName='decisionTable_1', methodName='setDepositAmt', args=[1349.20]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_46</instructionId>
+          <col>3</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_47', instruction='call', instanceName='decisionTable_1', methodName='setDepositDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_47</instructionId>
+          <col>4</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_48', instruction='call', instanceName='decisionTable_1', methodName='setCurrentDate', args=[03/12/2022]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>decisionTable_1_48</instructionId>
+          <col>5</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_50', instruction='call', instanceName='decisionTable_1', methodName='Cleared', args=[]}</instruction>
+        <slimResult>pass(Yes)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>decisionTable_1_50</instructionId>
+          <col>6</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>Yes</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_51', instruction='call', instanceName='decisionTable_1', methodName='UserAccountBalance', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_51</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountBalance[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_52', instruction='call', instanceName='decisionTable_1', methodName='UserAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_52</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method UserAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_53', instruction='call', instanceName='decisionTable_1', methodName='FFCAccount', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_53</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccount[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_1_54', instruction='call', instanceName='decisionTable_1', methodName='FFCAccountNewLineItems', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_1_54</instructionId>
+          <type>ReturnedValueExpectation</type>
+          <evaluationMessage>No Method FFCAccountNewLineItems[0] in class com.perrytech.deposits.fitnesseFixtures.ForFurtherCreditFixture.
+ Available methods:
+cleared() -&gt; class java.lang.String
+equals(java.lang.Object) -&gt; boolean
+getClass() -&gt; class java.lang.Class
+hashCode() -&gt; int
+notify() -&gt; void
+notifyAll() -&gt; void
+setCurrentDate(java.lang.String) -&gt; void
+setDepositAmt(double) -&gt; void
+setDepositDate(java.lang.String) -&gt; void
+setFFCAccount(java.lang.String) -&gt; void
+setUserAccount(java.lang.String) -&gt; void
+setUserAccountBalance(double) -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java -cp /Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/target/test-classes:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by fitnesse.slim.instructions.SystemExitSecurityManager (file:/Users/erinperry/dev/sbe-fitnesse-example/forests-and-monsters/FitNesse/fitnesse-standalone.jar)
+WARNING: Please consider reporting this to the maintainers of fitnesse.slim.instructions.SystemExitSecurityManager
+WARNING: System::setSecurityManager will be removed in a future release
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>233</totalRunTimeInMillis>
+</testResults>
+
